@@ -32,7 +32,7 @@
 * **Sistema → DIAN:** Envío de comprobante para facturación electrónica.
 
 *(Aquí insertas la imagen exportada del diagrama C4):*  
-![Diagrama C4 Nivel 1](../uml/c4_context_diagram.svg)
+![Diagrama C4 Nivel 1](../uml/diagrama_C4.png)
 
 ---
 
