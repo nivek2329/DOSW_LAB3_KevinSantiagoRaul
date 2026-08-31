@@ -550,3 +550,7 @@ Existe una tensión entre **RF04** y **RF07\***: RF04 establece que el estado de
 ### d. Requerimiento que no debería ir en el MVP
  
 **RF07\* (Dividir automáticamente un pedido de rolls en tandas de máximo 6 unidades)** no debería estar en el MVP. Es una optimización del flujo interno de la estación del itamae, no una funcionalidad indispensable para que el negocio opere: en una primera versión, la cocina puede organizar manualmente las tandas de preparación sin que el sistema lo automatice. Priorizarlo en el MVP consume esfuerzo de desarrollo que es mejor invertir en el ciclo básico de pedido–cocina–cobro (RF02, RF03, RF04, RF05).
+
+
+
+
