@@ -521,3 +521,32 @@
 | Elaborado por | Aprobado por | Fecha | Descripción y Justificación de Cambios |
 |---|---|---|---|
 | Equipo DOSW | | DD/MM/AAAA | Versión inicial del documento, requerimientos funcionales y no funcionales de Sushi Craft. |
+
+## PREGUNTAS DE ANÁLISIS
+ 
+| ID | Pregunta de análisis |
+|---|---|
+| **a** | ¿Identifica algún requerimiento que deba detallarse más? ¿Cuál(es)? ¿Por qué? |
+| **b** | ¿Existen requerimientos que se contradigan entre sí? ¿Cuál(es)? |
+| **c** | Si tuviera que dar prioridad, ¿cuáles serían los 2 más importantes para una primera iteración? Justifique. |
+| **d** | ¿Existe algún requerimiento que NO debería realizarse en el MVP? ¿Por qué? |
+ 
+### a. Requerimientos que deben detallarse más
+ 
+- **RF08\* (Bloquear platos por agotamiento de insumo):** falta especificar la relación entre platos e insumos (¿un plato puede tener varios insumos críticos? ¿todos deben agotarse o basta con uno?) y qué pasa con los pedidos que ya están en el KDS cuando el insumo se agota mientras se preparan.
+- **RF07\* (Dividir pedido en tandas):** no queda claro si el límite de 6 unidades aplica por pedido completo, por mesa o por franja horaria, ni cómo se ordenan las tandas cuando llegan varios pedidos simultáneos a la estación del itamae.
+- **RNF06\* (Confiabilidad — propagación en menos de 3 segundos):** falta definir el mecanismo técnico (ej. WebSockets, polling) y a qué clientes exactamente se propaga (¿solo a quienes tienen ese plato en su carrito, o a todos los dispositivos conectados?).
+- **RNF01 (Seguridad):** falta detallar qué acciones específicas puede realizar cada rol (cliente, mesero, cocina, administrador), ya que "control de acceso por rol" es muy general.
+### b. Requerimientos que se contradicen entre sí
+ 
+Existe una tensión entre **RF04** y **RF07\***: RF04 establece que el estado de **un pedido** avanza de forma secuencial (RECIBIDO → EN PREPARACIÓN → LISTO → ENTREGADO), pero RF07\* divide ese mismo pedido en varias tandas independientes que se preparan por separado en la estación del itamae. Esto genera ambigüedad: si algunas tandas ya están LISTAS y otras siguen EN PREPARACIÓN, ¿cuál es el estado real del pedido completo? El documento debería aclarar si el estado se maneja por tanda o si existe una regla de agregación para el estado global del pedido.
+ 
+### c. Los 2 requerimientos más importantes para la primera iteración
+ 
+1. **RF02 — Personalizar pedido**
+2. **RF03 — Confirmar y enviar pedido al KDS**
+**Justificación:** estos dos requerimientos conforman el ciclo mínimo de valor del negocio: capturar lo que el cliente quiere comer y comunicarlo a cocina en tiempo real. Sin ellos no existe un sistema de pedidos funcional, independientemente de qué tan pulida esté la carta (RF01) o qué tan sofisticados sean los reportes (RF06). El resto de funcionalidades (cambio de estados, cierre de cuenta, reportes, reglas de negocio propias) dependen de que este flujo básico exista primero.
+ 
+### d. Requerimiento que no debería ir en el MVP
+ 
+**RF07\* (Dividir automáticamente un pedido de rolls en tandas de máximo 6 unidades)** no debería estar en el MVP. Es una optimización del flujo interno de la estación del itamae, no una funcionalidad indispensable para que el negocio opere: en una primera versión, la cocina puede organizar manualmente las tandas de preparación sin que el sistema lo automatice. Priorizarlo en el MVP consume esfuerzo de desarrollo que es mejor invertir en el ciclo básico de pedido–cocina–cobro (RF02, RF03, RF04, RF05).
