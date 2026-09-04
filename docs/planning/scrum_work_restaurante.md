@@ -45,7 +45,7 @@ Cubre: **RF01** (consultar carta), **RF02** (personalizar ítems), **RF03** (con
 
 ## Feature 2 — Gestión de cocina, inventario y cierre de cuenta
 
-Cubre: **RF04** (cambiar estado desde cocina), **RF08\*** (bloqueo automático por insumo agotado). *(RF05 y RF06 quedan documentados como backlog futuro — ver nota final.)*
+Cubre: **RF04** (cambiar estado desde cocina), **RF08\*** (bloqueo automático por insumo agotado). *(RF05 y RF06 quedan documentados como backlog futuro  ver nota final.)*
 
 ### HU3 — Actualizar el estado de un pedido en el KDS
 **Como** cocina (itamae), **quiero** cambiar el estado de un pedido siguiendo RECIBIDO → EN PREPARACIÓN → LISTO → ENTREGADO, **para** que el salón sepa en qué punto va cada orden.
@@ -55,7 +55,7 @@ Cubre: **RF04** (cambiar estado desde cocina), **RF08\*** (bloqueo automático p
 - Dado que intento saltar un estado (ej. de RECIBIDO a ENTREGADO), cuando confirmo el cambio, entonces el sistema rechaza la transición (RF04, flujo alterno).
 
 **Subtareas:**
-1. Crear el endpoint `PATCH /pedidos/{id}/estado` con validación de transiciones (RF04)
+1. Crear el endpoint PATCH /pedidos/{id}/estado con validación de transiciones (RF04)
 2. Implementar la máquina de estados RECIBIDO → EN PREPARACIÓN → LISTO → ENTREGADO (RF04)
 3. Registrar usuario y hora de cada cambio de estado para auditoría (RNF05)
 
@@ -88,4 +88,4 @@ Cubre: **RF04** (cambiar estado desde cocina), **RF08\*** (bloqueo automático p
 | Historia de Usuario | 4 | HU1 (RF01,RF02), HU2 (RF03,RF07\*), HU3 (RF04), HU4 (RF08\*,RNF06\*) |
 | Subtarea | 12 | 3 por cada historia |
 
-**Nota de alcance:** RF05 (cerrar cuenta y pago), RF06 (reporte de ventas) y los RNF de seguridad, disponibilidad, usabilidad y cumplimiento legal (RNF01, RNF03, RNF04, RNF07) ya están documentados en `requirements.md` pero no se desglosaron en historias para este sprint — quedan en el backlog para una iteración posterior, priorizando primero el ciclo mínimo carta → pedido → cocina.
+**Nota de alcance:** RF05 (cerrar cuenta y pago), RF06 (reporte de ventas) y los RNF de seguridad, disponibilidad, usabilidad y cumplimiento legal (RNF01, RNF03, RNF04, RNF07) ya están documentados en requirements.md pero no se desglosaron en historias para este sprint  quedan en el backlog para una iteración posterior, priorizando primero el ciclo mínimo carta → pedido → cocina.
