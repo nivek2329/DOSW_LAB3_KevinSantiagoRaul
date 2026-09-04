@@ -1,7 +1,7 @@
 # Parte 6 — Product Backlog en Jira
 
 Sitio Jira: https://d7000934.atlassian.net/jira/software/projects/SCRUM/boards/1
-Proyecto: **SCRUM** — "Mi equipo de software"
+Proyecto: **SCRUM** — "Sushi Craft"
 
 > Nota de alcance técnico: el proyecto de Jira usado (tipo *team-managed*, plan gratuito) no incluye un tipo de incidencia **Feature** nativo — esa jerarquía de 4 niveles (Épica > Feature > Historia > Subtarea) requiere Advanced Roadmaps (plan Premium). Como equivalente se usó el tipo **Tarea** para representar cada Feature, vinculada a la Épica como hija (campo *Principal*), y cada Historia se vinculó a su Feature correspondiente con un enlace **"relates to"** (visible en la sección *Incidencias enlazadas* de cada Historia) además de estar vinculada directamente a la Épica como *Principal* (restricción propia de la jerarquía de Jira: una Historia solo puede tener una Épica como padre directo). Esto se documenta aquí para que quede explícito en la sustentación.
 
@@ -35,29 +35,13 @@ Proyecto: **SCRUM** — "Mi equipo de software"
 
 | # | Actividad en Jira | Estado | Evidencia en jira.md |
 |---|---|---|---|
-| 1 | Crear la épica: título, descripción, fecha de vencimiento y etiqueta del concepto | ✅ **SCRUM-5**, vence 2026-10-16, etiqueta `japones` | *Captura de la épica* — **pendiente: pegar aquí el pantallazo de SCRUM-5** |
-| 2 | Crear los 2 features y vincularlos a la épica como hijos | ✅ **SCRUM-6**, **SCRUM-7**, ambos con Principal = SCRUM-5 | *Captura mostrando la jerarquía* — **pendiente: pegar aquí el pantallazo** |
-| 3 | Crear las 4 historias de usuario con criterios de aceptación en la descripción | ✅ **SCRUM-8**, **SCRUM-9**, **SCRUM-10**, **SCRUM-11** | *Captura de cada historia* — **pendiente: pegar 4 pantallazos** |
-| 4 | Vincular cada historia a su feature correspondiente | ✅ ver tabla de trazabilidad abajo | *Captura del árbol épica → feature → historia* — **pendiente: pegar pantallazo del Timeline/backlog mostrando la jerarquía** |
-| 5 | Crear las 12 subtareas (3 por historia), cada una con su historia padre | ✅ **SCRUM-12** a **SCRUM-23** | *Captura de cada subtarea* — **pendiente: pegar pantallazos** |
-| 6 | Asignar prioridad (Alta/Media/Baja) a cada historia de usuario | ✅ ver tabla de trazabilidad abajo | *Captura del backlog con prioridades* — **pendiente: pegar pantallazo del backlog** |
-| 7 | Actualizar scrum_work_restaurante.md con los IDs de Jira | ✅ ver `scrum_work_restaurante.md` actualizado | *Archivo actualizado* |
-| 8 | Captura del cronograma/timeline en Jira mostrando la épica completa | ⬜ pendiente | *Captura del timeline* — **pendiente: pegar pantallazo de la vista Timeline** |
-
-### Cómo completar las capturas pendientes
-
-Los 8 issues de la tabla ya existen de verdad en el tablero (no son un borrador — se crearon con la integración de Jira). Para cerrar el checklist solo falta entrar al tablero, abrir cada issue o vista y tomar el pantallazo:
-
-1. Épica: https://d7000934.atlassian.net/browse/SCRUM-5
-2. Jerarquía / features: https://d7000934.atlassian.net/browse/SCRUM-6 y https://d7000934.atlassian.net/browse/SCRUM-7 (o la vista Timeline del proyecto)
-3. Historias: SCRUM-8, SCRUM-9, SCRUM-10, SCRUM-11 (abrir cada una)
-4. Árbol épica→feature→historia: vista **Timeline** del proyecto (menú lateral izquierdo) con la épica SCRUM-5 expandida
-5. Subtareas: abrir cada historia y expandir su sección "Subtareas"
-6. Backlog con prioridades: vista **Backlog** del proyecto
-7. (ya resuelto en este archivo)
-8. Timeline completo: vista **Timeline**, con el rango de fechas ajustado para que se vea toda la épica
-
-Pega cada captura debajo de su fila correspondiente (o como anexo al final) antes de entregar.
+| 1 | Crear la épica: título, descripción, fecha de vencimiento y etiqueta del concepto | **SCRUM-5**, vence 2026-10-16, etiqueta `japones` |<img width="966" height="342" alt="image" src="https://github.com/user-attachments/assets/b615b256-c16f-4d06-af0f-a035dbffa748" />|
+| 2 | Crear los 2 features y vincularlos a la épica como hijos | **SCRUM-6**, **SCRUM-7**, ambos con Principal = SCRUM-5 |<img width="954" height="557" alt="image" src="https://github.com/user-attachments/assets/b656a854-75f3-4722-8121-0a27709b4635" />|
+| 3 | Crear las 4 historias de usuario con criterios de aceptación en la descripción | **SCRUM-8**, **SCRUM-9**, **SCRUM-10**, **SCRUM-11** |<img width="605" height="179" alt="image" src="https://github.com/user-attachments/assets/909fe633-3f11-42cc-83ff-c0b087e2d433" />|
+| 4 | Vincular cada historia a su feature correspondiente | ver tabla de trazabilidad abajo |<img width="1576" height="901" alt="image" src="https://github.com/user-attachments/assets/4557e216-84ff-42a0-8e45-516cc4669e83" />|
+| 5 | Crear las 12 subtareas (3 por historia), cada una con su historia padre | **SCRUM-12** a **SCRUM-23** |<img width="1251" height="484" alt="image" src="https://github.com/user-attachments/assets/bed7364e-cc6e-4069-ad28-c2857b71677a" />|
+| 6 | Asignar prioridad (Alta/Media/Baja) a cada historia de usuario | ver tabla de trazabilidad abajo |<img width="1602" height="874" alt="image" src="https://github.com/user-attachments/assets/ab793f8c-edd9-4b06-819c-25890b683562" />|
+| 7 | Captura del cronograma/timeline en Jira mostrando la épica completa | pendiente | <img width="1601" height="459" alt="image" src="https://github.com/user-attachments/assets/d0f00573-f9d3-4cc8-9567-0578f1df84d8" />|
 
 ---
 
@@ -88,14 +72,3 @@ Pega cada captura debajo de su fila correspondiente (o como anexo al final) ante
 - SCRUM-23 — Propagar el cambio de disponibilidad en tiempo real a las sesiones activas
 
 ---
-
-## Errores comunes al usar Jira (autoevaluación del equipo)
-
-| ❌ Lo que no se debe hacer | ✅ Lo correcto | Cómo quedó en este backlog |
-|---|---|---|
-| Crear todas las tareas sueltas, sin épica ni jerarquía | Toda subtarea cuelga de una historia, y toda historia de un feature o de la épica | Cumplido — ver tabla de trazabilidad |
-| Escribir la historia como tarea técnica | La historia describe valor para un rol; lo técnico va en la subtarea | Cumplido — las 4 historias usan formato Como/quiero/para |
-| Dejar la descripción vacía | La descripción incluye contexto y criterios de aceptación verificables | Cumplido — todas las historias tienen Dado/Cuando/Entonces |
-| Asignar una historia completa a una sola persona | Se asignan las subtareas; la historia es responsabilidad del equipo | Pendiente — asignación de subtareas se hace en la planeación del sprint (Parte 7) |
-| Estimar los puntos de historia en horas | Los puntos miden complejidad relativa, no tiempo | Pendiente — puntos de historia se diligencian en la Parte 7 |
-| Crear el backlog una vez y no volver a tocarlo | El backlog se refina en cada sprint | A tener en cuenta en iteraciones futuras |
