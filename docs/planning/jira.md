@@ -71,4 +71,11 @@ Proyecto: **SCRUM** — "Sushi Craft"
 - SCRUM-22 — Implementar la regla de bloqueo/desbloqueo automático de platos según stock
 - SCRUM-23 — Propagar el cambio de disponibilidad en tiempo real a las sesiones activas
 
+### Justificación de la decisión de planeación
+
+<img width="1555" height="528" alt="image" src="https://github.com/user-attachments/assets/192794fb-b1b7-4109-b2bd-c3457439615a" />
+
+Para el Sprint 1 se seleccionaron las historias SCRUM-10 (5 pts), SCRUM-8 (8 pts) y SCRUM-9 (8 pts), con un total de 21 puntos de historia. Se dejó fuera SCRUM-11 (21 pts) por dos razones: primero, su prioridad es Media frente a la prioridad Alta de las otras tres, por lo que el criterio de priorización (Alta antes que Media) la ubica después en el orden de trabajo; segundo, sus 21 puntos por sí solos igualan la capacidad completa que ya cubren las otras tres historias juntas, lo que indica que la historia es demasiado grande para una sola iteración y debería dividirse en subtareas o historias más pequeñas antes de planearla en un sprint futuro, en vez de meterla completa y arriesgar no terminarla.
+En cuanto a la asignación de responsables, las 9 subtareas de las 3 historias incluidas se repartieron así: Kevin Ángel quedó con las 3 subtareas de SCRUM-8 (SCRUM-12, 13, 14) más una de SCRUM-10 (SCRUM-18), y Santiago García con las 3 subtareas de SCRUM-9 (SCRUM-15, 16, 17) más las otras dos de SCRUM-10 (SCRUM-19, 20). Se buscó que cada historia quedara, en lo posible, concentrada en una sola persona, para que quien la trabaje mantenga el contexto técnico completo de esa funcionalidad en vez de fragmentarlo entre los dos; la carga final quedó balanceada en 4 subtareas para uno y 5 para el otro.
+
 ---
