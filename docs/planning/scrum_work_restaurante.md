@@ -15,7 +15,7 @@ Cubre: **RF01** (consultar carta), **RF02** (personalizar ítems), **RF03** (con
 
 ### HU1 — Personalizar y agregar un roll al pedido
 
-**Jira: [SCRUM\-8](https://d7000934.atlassian.net/browse/SCRUM-8)**
+**Jira: [SCRUM\-8](https://d7000934.atlassian.net/browse/SCRUM-8)** — **Puntos de historia: 8** (Planning Poker con el equipo; [video de la sesión](https://drive.google.com/file/d/1XOTunURc89yTYYyYIG1nfml5uBxizaMK/view?usp=sharing))
 
 **Como** cliente, **quiero** seleccionar proteína, base, vegetales, envoltura y salsa para armar mi roll, **para** agregarlo a mi pedido con el precio correcto.
 
@@ -34,7 +34,7 @@ Cubre: **RF01** (consultar carta), **RF02** (personalizar ítems), **RF03** (con
 
 ### HU2 — Confirmar el pedido y enviarlo al KDS en tandas
 
-**Jira: [SCRUM\-9](https://d7000934.atlassian.net/browse/SCRUM-9)**
+**Jira: [SCRUM\-9](https://d7000934.atlassian.net/browse/SCRUM-9)** — **Puntos de historia: 8**
 
 **Como** mesero, **quiero** confirmar el pedido del cliente para que se envíe automáticamente al tablero de cocina dividido en tandas de máximo 6 rolls, **para** que el itamae reciba lotes manejables.
 
@@ -59,7 +59,7 @@ Cubre: **RF04** (cambiar estado desde cocina), **RF08\*** (bloqueo automático p
 
 ### HU3 — Actualizar el estado de un pedido en el KDS
 
-**Jira: [SCRUM\-10](https://d7000934.atlassian.net/browse/SCRUM-10)**
+**Jira: [SCRUM\-10](https://d7000934.atlassian.net/browse/SCRUM-10)** — **Puntos de historia: 5**
 
 **Como** cocina (itamae), **quiero** cambiar el estado de un pedido siguiendo RECIBIDO → EN PREPARACIÓN → LISTO → ENTREGADO, **para** que el salón sepa en qué punto va cada orden.
 
@@ -78,7 +78,7 @@ Cubre: **RF04** (cambiar estado desde cocina), **RF08\*** (bloqueo automático p
 
 ### HU4 — Bloquear automáticamente platos sin insumo disponible
 
-**Jira: [SCRUM\-11](https://d7000934.atlassian.net/browse/SCRUM-11)**
+**Jira: [SCRUM\-11](https://d7000934.atlassian.net/browse/SCRUM-11)** — **Puntos de historia: 21**
 
 **Como** administrador, **quiero** que el sistema marque como agotados los platos que dependen de un insumo de pesca en cero, **para** evitar que se ordenen platos que no se pueden preparar.
 
@@ -95,6 +95,8 @@ Cubre: **RF04** (cambiar estado desde cocina), **RF08\*** (bloqueo automático p
 
 **Prioridad: Media** — regla distintiva del concepto, pero el MVP puede operar inicialmente con actualización manual mientras se prioriza el flujo base del pedido.
 
+**Nota:** el 21 supera el umbral habitual de Planning Poker (\>13 normalmente indica que conviene partir la historia). Vale la pena que el equipo valore dividir esta historia en el refinamiento del backlog antes del Sprint 1, dado el alcance de infraestructura en tiempo real que implica.
+
 ## Resumen de la jerarquía
 
 | Nivel | Cantidad | Detalle | IDs de Jira |
@@ -104,6 +106,6 @@ Cubre: **RF04** (cambiar estado desde cocina), **RF08\*** (bloqueo automático p
 | Historia de Usuario | 4 | HU1 (RF01,RF02), HU2 (RF03,RF07\*), HU3 (RF04), HU4 (RF08\*,RNF06\*) | SCRUM\-8, SCRUM\-9, SCRUM\-10, SCRUM\-11 |
 | Subtarea | 12 | 3 por cada historia | SCRUM\-12 a SCRUM\-23 |
 
-**Nota de alcance:** RF05 (cerrar cuenta y pago), RF06 (reporte de ventas) y los RNF de seguridad, disponibilidad, usabilidad y cumplimiento legal (RNF01, RNF03, RNF04, RNF07) ya están documentados en `requirements.md` pero no se desglosaron en historias para este sprint — quedan en el backlog para una iteración posterior, priorizando primero el ciclo mínimo carta → pedido → cocina.
+**Nota de alcance:** RF05 (cerrar cuenta y pago), RF06 (reporte de ventas) y los RNF de seguridad, disponibilidad, usabilidad y cumplimiento legal (RNF01, RNF03, RNF04, RNF07) ya están documentados en requirements.md pero no se desglosaron en historias para este sprint — quedan en el backlog para una iteración posterior, priorizando primero el ciclo mínimo carta → pedido → cocina.
 
-**Nota técnica sobre Jira:** el proyecto SCRUM (plan gratuito, team\-managed) no tiene tipo de incidencia "Feature" nativo; se usó el tipo **Tarea** como equivalente, vinculada a la épica como hija. Cada Historia se vinculó a su Épica como *Principal* (restricción de Jira) y a su Feature correspondiente mediante un enlace **"relates to"**. Detalle completo en `jira.md`.
+**Nota técnica sobre Jira:** el proyecto SCRUM (plan gratuito, team\-managed) no tiene tipo de incidencia "Feature" nativo; se usó el tipo **Tarea** como equivalente, vinculada a la épica como hija. Cada Historia se vinculó a su Épica como *Principal* (restricción de Jira) y a su Feature correspondiente mediante un enlace **"relates to"**. Detalle completo en jira.md.
