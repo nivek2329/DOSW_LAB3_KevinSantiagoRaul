@@ -4,7 +4,7 @@
 
 **Fecha:** 31/08/2026
 **Proyecto:** Sushi Craft — Sistema de gestión de pedidos y cocina
-
+**Link:** https://www.figma.com/make/xDeP6F13LfkYCX0nUykOzs/App-de-estudio-con-tarjetas?fullscreen=1&t=fmNmS3qTx8J8k4Jz-1&code-node-id=0-6
 ---
 
 ## Tabla de contenido
